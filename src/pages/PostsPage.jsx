@@ -15,7 +15,7 @@ const [commentData, setCommentData] = useState([])
     }, )
     
     useEffect(() => {
-        fetch(`https://jsonplaceholder.typicode.com/comments/${id}`).then((response) => response.json()).then((json) => setCommentData(json))
+        fetch(`https://jsonplaceholder.typicode.com/comments?postId=${id}`).then((response) => response.json()).then((json) => setCommentData(json))
     },)
 
 

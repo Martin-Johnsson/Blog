@@ -1,0 +1,90 @@
+.typography {
+  color: black;
+  font-family: sherif;
+  margin-top: 10px;
+}
+
+.ulList {
+  list-style-type: none;
+  margin: 100px;
+}
+
+.header {
+  padding: 1px 1px;
+  background: #140f07;
+  color: #f1f1f1;
+  margin-bottom: 2em;
+}
+.postBody {
+  font-size: 0.7em;
+  margin-top: 1rem;
+  border: 2px solid black;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  background: #385db7;
+  color: white;
+}
+.home {
+  color: #555;
+  border: none;
+}
+
+.typographyPostBody {
+  color: black;
+  font-family: sherif;
+  margin-left: 1rem;
+  color: white;
+}
+
+.postCommentDiv {
+  font-size: 20px;
+  margin-top: 1rem;
+  border: 2px solid black;
+  background: #7b9dfd;
+}
+
+body {
+  margin: 0, 5rem, 0, 0;
+  height: 100%;
+
+  background: #0e2952;
+}
+
+.button {
+  font-size: 10rem;
+}
+
+.post {
+  margin: 0em;
+  border: 3px solid black;
+}
+.centerText {
+  text-align: center;
+}
+.comment {
+  border: 2px solid black;
+  margin-top: 40px;
+  margin-bottom: 1rem;
+  background: #7b9dfd;
+}
+
+.bold {
+  text-decoration: solid;
+}
+.whiteText {
+  color: white;
+}
+.thirdColor {
+  background: #385db7;
+  color: white;
+}
+.fourthColor {
+  background: #7b9dfd;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: white;
+}

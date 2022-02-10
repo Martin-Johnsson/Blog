@@ -1,9 +1,8 @@
-import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 import HomePage from "./pages/HomePage";
 import PostsPage from "./pages/PostsPage";
-
+import { body } from "./components/modules/styles.css";
 function App() {
   const [posts, setPosts] = useState([]);
 
@@ -15,7 +14,7 @@ function App() {
 
   console.log(posts);
   return (
-    <div className="App">
+    <div>
       <Switch>
         <Route
           exact
