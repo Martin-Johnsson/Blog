@@ -14,7 +14,7 @@ const Posts = (props) => {
     postDetails:{...post}
     }}> 
 
-  <li classname="typography">Titel: {post.title}</li> 
+  <li classname="typography">{post.title}</li> 
   
   </Link> </div> )
   })}

@@ -12,7 +12,6 @@ function App() {
       .then((json) => setPosts(json));
   }, []);
 
-  console.log(posts);
   return (
     <div>
       <Switch>

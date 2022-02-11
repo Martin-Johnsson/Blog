@@ -1,5 +1,6 @@
 import { Link, useHistory } from "react-router-dom";
 import Header from './Header'
+import Footer from './Footer'
 import {typography, ul, button, postBody, typographyPostBody, postCommentDiv} from './modules/styles.css'
 import {AiFillHome} from 'react-icons/ai'
 const Post = (props) =>{
@@ -11,25 +12,28 @@ const {postData: {title, body} } = props
 <header className="header">
 
     {/*<Link to="/">*/}
-    <span classname="button" onClick={(() => {history.push("/")})}> <AiFillHome/> Home</span>
+    <i onClick={(() => {history.push("/")})}><AiFillHome/></i>
     {/*</Link>*/} 
 
-    <Header title="Brandons forum"/> 
+    <Header className="textSize"title="Brandons forum"/> 
         </header>
         <div className="postBody whiteText">
             <h1 className="centerText">{title}</h1>
                 <p className="typographyPostBody whiteText">{body}</p>
         </div>
     <div classname="postCommentDiv" >
-        <p className="centerText whiteText ">Comments</p>
+        <p className="centerText whiteText textSize ">Comments</p>
     </div>
     
     {props.commentData.map((comment, id) => { 
         return (
             <>
                 <div className="comment" >
-                    <small> Comment from <strong>{comment.name}</strong> <br/> (Email: {comment.email}) <br/> ''{comment.body}''</small>
+                    <p> Comment from <strong>{comment.name}</strong></p>  
+                    <p>(Email: {comment.email})</p>
+                    <p>''{comment.body}''</p>
                 </div>
+                <Footer copyright=" @ Copyright 2022"/>
             </>
         )
     

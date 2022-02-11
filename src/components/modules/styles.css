@@ -11,12 +11,12 @@
 
 .header {
   padding: 1px 1px;
-  background: #140f07;
-  color: #f1f1f1;
+  background: black;
+  color: white;
   margin-bottom: 2em;
 }
 .postBody {
-  font-size: 0.7em;
+  font-size: 15px;
   margin-top: 1rem;
   border: 2px solid black;
   padding-bottom: 2rem;
@@ -46,12 +46,7 @@
 body {
   margin: 0, 5rem, 0, 0;
   height: 100%;
-
   background: #0e2952;
-}
-
-.button {
-  font-size: 10rem;
 }
 
 .post {
@@ -87,4 +82,8 @@ a:visited,
 a:hover,
 a:active {
   color: white;
+}
+
+.textSize {
+  font-size: 25px;
 }
